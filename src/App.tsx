@@ -27,21 +27,21 @@ import { RedirectPathToSwapOnly, RedirectToSwap } from './views/Swap/redirects'
 
 // Route-based code splitting
 // Only pool is included in the main bundle because of it's the most visited page
-const Home = lazy(() => import('./views/Home'))
-const Farms = lazy(() => import('./views/Farms'))
-const FarmAuction = lazy(() => import('./views/FarmAuction'))
+// const Home = lazy(() => import('./views/Home'))
+// const Farms = lazy(() => import('./views/Farms'))
+// const FarmAuction = lazy(() => import('./views/FarmAuction'))
 const Lottery = lazy(() => import('./views/Lottery'))
-const Ifos = lazy(() => import('./views/Ifos'))
+// const Ifos = lazy(() => import('./views/Ifos'))
 const NotFound = lazy(() => import('./views/NotFound'))
-const Collectibles = lazy(() => import('./views/Collectibles'))
-const Teams = lazy(() => import('./views/Teams'))
-const Team = lazy(() => import('./views/Teams/Team'))
-const Profile = lazy(() => import('./views/Profile'))
-const TradingCompetition = lazy(() => import('./views/TradingCompetition'))
-const Predictions = lazy(() => import('./views/Predictions'))
-const Voting = lazy(() => import('./views/Voting'))
-const Proposal = lazy(() => import('./views/Voting/Proposal'))
-const CreateProposal = lazy(() => import('./views/Voting/CreateProposal'))
+// const Collectibles = lazy(() => import('./views/Collectibles'))
+// const Teams = lazy(() => import('./views/Teams'))
+// const Team = lazy(() => import('./views/Teams/Team'))
+// const Profile = lazy(() => import('./views/Profile'))
+// const TradingCompetition = lazy(() => import('./views/TradingCompetition'))
+// const Predictions = lazy(() => import('./views/Predictions'))
+// const Voting = lazy(() => import('./views/Voting'))
+// const Proposal = lazy(() => import('./views/Voting/Proposal'))
+// const CreateProposal = lazy(() => import('./views/Voting/CreateProposal'))
 const AddLiquidity = lazy(() => import('./views/AddLiquidity'))
 const Liquidity = lazy(() => import('./views/Pool'))
 const PoolFinder = lazy(() => import('./views/PoolFinder'))
@@ -67,9 +67,9 @@ const App: React.FC = () => {
         <SuspenseWithChunkError fallback={<PageLoader />}>
           <Switch>
             <Route path="/" exact>
-              <Home />
+            <Lottery />
             </Route>
-            <Route exact path="/farms/auction">
+            {/* <Route exact path="/farms/auction">
               <FarmAuction />
             </Route>
             <Route path="/farms">
@@ -77,11 +77,11 @@ const App: React.FC = () => {
             </Route>
             <Route path="/pools">
               <Pools />
-            </Route>
+            </Route> */}
             <Route path="/lottery">
               <Lottery />
             </Route>
-            <Route path="/ifo">
+            {/* <Route path="/ifo">
               <Ifos />
             </Route>
             <Route path="/collectibles">
@@ -110,7 +110,7 @@ const App: React.FC = () => {
             </Route>
             <Route path="/voting/proposal/:id">
               <Proposal />
-            </Route>
+            </Route> */}
 
             {/* Using this format because these components use routes injected props. We need to rework them with hooks */}
             <Route exact strict path="/swap" component={Swap} />

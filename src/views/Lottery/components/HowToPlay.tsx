@@ -216,29 +216,29 @@ const HowToPlay: React.FC = () => {
   const steps: Step[] = [
     {
       label: t('Step %number%', { number: 1 }),
-      title: t('Buy Tickets'),
-      subtitle: t('Prices are set when the round starts, equal to 5 USD in CAKE per ticket.'),
+      title: t('Purchase Tickets'),
+      subtitle: t('Each KingDoge Lottery Ticket costs KDOGE.'),
     },
     {
       label: t('Step %number%', { number: 2 }),
       title: t('Wait for the Draw'),
-      subtitle: t('There are two draws every day: one every 12 hours.'),
+      subtitle: t('To make it easier for our community all around the world, there are draws every 12 hours.'),
     },
     {
       label: t('Step %number%', { number: 3 }),
-      title: t('Check for Prizes'),
-      subtitle: t('Once the round’s over, come back to the page and check to see if you’ve won!'),
+      title: t('Come Check for Prizes'),
+      subtitle: t('Once the draw is done, come back to the platform and check to see if you’ve won!'),
     },
   ]
   return (
     <Box width="100%">
       <Flex mb="40px" alignItems="center" flexDirection="column">
         <Heading mb="24px" scale="xl" color="secondary">
-          {t('How to Play')}
+          {t(' Cannot Understand What To Do? ')}
         </Heading>
         <Text textAlign="center">
           {t(
-            'If the digits on your tickets match the winning numbers in the correct order, you win a portion of the prize pool.',
+            'Just buy tickets, wait for the lottery to end, if the digits on your tickets match the winning numbers in the correct order, you win a portion of the prize pool. Easy!',
           )}
         </Text>
         <Text>{t('Simple!')}</Text>
@@ -290,10 +290,10 @@ const HowToPlay: React.FC = () => {
       <GappedFlex flexDirection={['column', 'column', 'column', 'row']}>
         <Flex flex="2" flexDirection="column">
           <Heading mb="24px" scale="lg" color="secondary">
-            {t('Prize Funds')}
+            {t('How the Lottery Works:')}
           </Heading>
-          <Text color="textSubtle">{t('The prizes for each lottery round come from three sources:')}</Text>
-          <Heading my="16px" scale="md">
+          <Text color="textSubtle">{t('Users will be able to buy 20 lottery tickets per wallet. Each user will pay a 10 billion KingDoge tokens to buy his ticket. Paying for one ticket will give users a random 4 digit combination in the form of an NFT attached with this 4 digit number. The lottery will be held every day, will start at the time decided, and will end at a certain time.')}</Text>
+          {/* <Heading my="16px" scale="md">
             {t('Ticket Purchases')}
           </Heading>
           <BulletList>
@@ -329,7 +329,7 @@ const HowToPlay: React.FC = () => {
                 </InlineLink>
               </Text>
             </li>
-          </BulletList>
+          </BulletList> */}
         </Flex>
         <Flex flex="1" justifyContent="center">
           <PoolAllocations />
@@ -346,8 +346,8 @@ const HowToPlay: React.FC = () => {
           </Heading>
           <Text>
             {t('Check our in-depth guide on')}{' '}
-            <InlineLink href="https://docs.pancakeswap.finance/products/lottery/lottery-guide">
-              {t('how to play the PancakeSwap lottery!')}
+            <InlineLink href="">
+              {t('how to play the KingDoge lottery!')}
             </InlineLink>
           </Text>
         </Flex>

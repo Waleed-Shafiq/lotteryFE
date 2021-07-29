@@ -68,10 +68,10 @@ const CheckPrizesSection = () => {
           <TicketImage src="/images/lottery/ticket-l.png" alt="lottery ticket" />
           <Flex mx={['4px', null, '16px']} flexDirection="column" alignItems="center">
             <Heading textAlign="center" color="#F4EEFF">
-              {t('Connect your wallet')}
+              {t('Just Connect Your Wallet')}
             </Heading>
             <Heading textAlign="center" color="#F4EEFF" mb="24px">
-              {t("to check if you've won!")}
+              {t("To See Your Winnings!")}
             </Heading>
             <ConnectWalletButton width="190px" />
           </Flex>
